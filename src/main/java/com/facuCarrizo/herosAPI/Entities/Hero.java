@@ -1,23 +1,29 @@
 package com.facuCarrizo.herosAPI.Entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.ArrayList;
 
+@Entity
 public class Hero {
 
+        @Id
         private long id;
+
         private String hero;
         private String publisher;
         private String alterEgo;
         private String firstAppearence;
         private Vote vote;
 
-        private ArrayList<Hero> heroList;
 
-        public Hero(String hero, String publisher, String alterEgo, String firstAppearence) {
+        public Hero(long id, String hero, String publisher, String alterEgo, String firstAppearence, Vote vote) {
+            this.id = id;
             this.hero = hero;
             this.publisher = publisher;
             this.alterEgo = alterEgo;
             this.firstAppearence = firstAppearence;
+            this.vote = vote;
         }
 
         public void votar(){
@@ -33,25 +39,7 @@ public class Hero {
 
         }
 
-        /*
-        public void addHeroList(Hero addedHero){
-            this.heroList.add(addedHero);
-        }
 
-        public Hero(long id, String content) {
-                this.id = id;
-                this.hero = content;
-        }
-         */
-
-        public Hero(long id, String hero, String publisher, String alterEgo, String firstAppearence, Vote vote) {
-            this.id = id;
-            this.hero = hero;
-            this.publisher = publisher;
-            this.alterEgo = alterEgo;
-            this.firstAppearence = firstAppearence;
-            this.vote = vote;
-        }
 
         @Override
             public String toString() {

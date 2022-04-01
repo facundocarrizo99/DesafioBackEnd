@@ -25,13 +25,7 @@ public class VoteController {
     }
     */
 
-    @PostMapping("/api/v1/votes")
-    @ResponseBody
-    public String voteHero(@RequestBody String votedHero) {
-        //votesService.addVote(votedHero);
-        return "has hecho una peticion post";
 
-    }
 
 
 

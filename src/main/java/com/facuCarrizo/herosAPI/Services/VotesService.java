@@ -10,11 +10,7 @@ import java.util.List;
 
 public class VotesService {
 
-    public void addVote(Hero votedHero) {
-        votedHero.votar();
 
-
-    }
 
     public void createListHeros(){
         List<Vote> heroList = new ArrayList<Vote>();

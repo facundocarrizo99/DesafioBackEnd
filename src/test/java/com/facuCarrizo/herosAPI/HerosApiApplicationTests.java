@@ -6,9 +6,6 @@ import junit.framework.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @SpringBootTest
 class HerosApiApplicationTests {
 
@@ -19,6 +16,7 @@ class HerosApiApplicationTests {
 	Hero hero1 = new Hero(1,"Batman", "DC", "Burce Wayne", "Comic 1",vote1);
 	Hero hero2 = new Hero(2,"Super-Man", "DC", "Kal-El", "Comic 2", vote2);
 	Hero hero3 = new Hero(3, "Iron-Man", "Marvel", "Tony Stark", "Comic 0", vote3);
+
 
 
 	@Test
