@@ -2,22 +2,25 @@ package com.facuCarrizo.herosAPI.Entities;
 
 public class Vote {
 
-    private long idHero;
+    private long heroID;
     private Integer votos;
 
 
     public void votar(){
-        votos++;
+        this.votos++;
     }
 
 
-
-    public Hero getHero() {
-        return idHero;
+    public Vote(Integer votos) {
+        this.votos = votos;
     }
 
-    public void setHero(Hero hero) {
-        this.idHero = idHero;
+    public long getHeroID() {
+        return heroID;
+    }
+
+    public void setHeroID(long heroID) {
+        this.heroID = heroID;
     }
 
     public Integer getVotos() {
