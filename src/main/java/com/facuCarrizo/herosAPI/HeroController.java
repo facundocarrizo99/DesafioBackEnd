@@ -1,10 +1,12 @@
 package com.facuCarrizo.herosAPI;
 
 import java.util.concurrent.atomic.AtomicLong;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 public class HeroController {
@@ -16,4 +18,11 @@ public class HeroController {
     public Hero hero(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Hero(counter.incrementAndGet(), String.format(template, name));
     }
+
+    @PostMapping("/votes")
+    @ResponseBody
+    public String voteHero() {
+        return "has hecho una peticion post";
+    }
+
 }
