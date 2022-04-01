@@ -7,4 +7,5 @@ Hice un test muy simple ocn datos harcodeados para que se valide que se puede vo
 No hay nada de SQL en MAster, en la branch SQL pude agregar algo, pero no esta verificado que funcione por falta de tiempo. Solo puede realizar el build y no se
 queda corriendo.
 
-
+Para la coneccion de Postman: get:  http://localhost:8080/hero
+                              post: http://localhost:8080/votes
